@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realsense-s", "third_party\librealsense\librealsense.vc15\realsense-s\realsense-s.vcxproj", "{622186C4-6D7D-4288-B8FD-8F08419181C2}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "synthetic-hand-tracker-vs2017", "synthetic-hand-tracker\synthetic-hand-tracker-vs2017.vcxproj", "{94A29DBD-EEA1-4601-BB46-1A645FBC3423}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "annotation-fixer-vs2017", "annotation-fixer\annotation-fixer-vs2017.vcxproj", "{0357BFD6-81E9-4C4A-BEBC-996BA24EA909}"
@@ -12,6 +10,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realtime-annotator-vs2017", "realtime-annotator\realtime-annotator-vs2017.vcxproj", "{F0F35C98-3008-478C-AFB7-FCB20A0A52F2}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realtime-hand-tracker-vs2017", "realtime-hand-tracker\realtime-hand-tracker-vs2017.vcxproj", "{1D5EDCFF-CA80-4DEE-A890-569ADC108F33}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "train-hand-pose-cnn-vs2017", "train-hand-pose-cnn\train-hand-pose-cnn-vs2017.vcxproj", "{84408743-88CA-4E07-B266-214771724370}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realsense-s", "third_party\librealsense\librealsense.vc15\realsense-s\realsense-s.vcxproj", "{622186C4-6D7D-4288-B8FD-8F08419181C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,14 @@ Global
 		{1D5EDCFF-CA80-4DEE-A890-569ADC108F33}.Release|Win32.Build.0 = Release|Win32
 		{1D5EDCFF-CA80-4DEE-A890-569ADC108F33}.Release|x64.ActiveCfg = Release|x64
 		{1D5EDCFF-CA80-4DEE-A890-569ADC108F33}.Release|x64.Build.0 = Release|x64
+		{84408743-88CA-4E07-B266-214771724370}.Debug|Win32.ActiveCfg = Debug|Win32
+		{84408743-88CA-4E07-B266-214771724370}.Debug|Win32.Build.0 = Debug|Win32
+		{84408743-88CA-4E07-B266-214771724370}.Debug|x64.ActiveCfg = Debug|x64
+		{84408743-88CA-4E07-B266-214771724370}.Debug|x64.Build.0 = Debug|x64
+		{84408743-88CA-4E07-B266-214771724370}.Release|Win32.ActiveCfg = Release|Win32
+		{84408743-88CA-4E07-B266-214771724370}.Release|Win32.Build.0 = Release|Win32
+		{84408743-88CA-4E07-B266-214771724370}.Release|x64.ActiveCfg = Release|x64
+		{84408743-88CA-4E07-B266-214771724370}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

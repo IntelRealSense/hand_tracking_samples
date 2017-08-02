@@ -147,10 +147,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="htraincnn.cpp" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="readme.md" />
+    <ClCompile Include="train-cnn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\dataset.h" />
+    <ClInclude Include="..\include\handtrack.h" />
+    <ClInclude Include="..\include\misc_image.h" />
+    <ClInclude Include="..\include\physmodel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
