@@ -4,7 +4,7 @@
 
 Platform | Build Status |
 -------- | ------------ |
-Visual Studio 2015 | [![Build status](https://ci.appveyor.com/api/projects/status/t1v586iy881ptlql?svg=true)](https://ci.appveyor.com/project/ddiakopoulos/sandbox)
+Visual Studio 2015 | [![Build status](https://ci.appveyor.com/api/projects/status/swutsp1bjcc56q64/branch/master?svg=true)](https://ci.appveyor.com/project/ddiakopoulos/hand-tracking-samples/branch/master)
 
 This project provides C++ code to demonstrate hand pose estimation via depth data, namely Intel® RealSense™ depth cameras. Additionally, this project showcases the utility of convolutional neural networks as a key component of real-time hand tracking pipelines. A variety of tools and apps are provided, including an OpenVR demo showing hand tracking from an egocentrically-mounted depth camera. A YouTube video demonstrating some functionality the hand tracking code can be found [here](https://www.youtube.com/watch?v=Yqz6T9IdiNk). 
 
@@ -42,16 +42,16 @@ The project does not aim to provide a comprehensive hand pose estimation pipelin
 
 * The system must be initialized close to a known hand pose and assumes a single (right) hand only
 * No sophisticated background removal or segmentation algorithms has been provided
-* Localization/segmentation of the hand within the image was designed mostly for VR usage and relies on seeing where the wrist enters the image frame
+* Localization/segmentation of the hand within the image was designed mostly for egocentric VR usage and relies on seeing where the wrist enters the image frame
 * The dynamics-based tracker depends on a 3D hand model whose size and joint locations closely match the author's
-* Example projects must be compiled in Release mode (-O3), otherwise the code does not run at interactive framerates in Debug
+* Example projects must be compiled in Release mode (-O3), otherwise the project will not run at interactive framerates
 
 ## Future Work
 
 The approach to dynamic-based tracking was first described by Melax Et Al. in [Dynamics Based 3D Skeletal Hand Tracking (2013)](https://arxiv.org/abs/1705.07640) and later released in [binary form](https://software.intel.com/en-us/articles/the-intel-skeletal-hand-tracking-library-experimental-release) for evaluation. _Hand Tracking Samples_ implements an identical solver and builds upon dynamics-based tracking, taking inspiration from Jonathan Tompson's [Real-Time Continuous Pose Recovery of Human Hands Using Convolutional Networks (2014)](http://www.cims.nyu.edu/~tompson/others/TOG_2014_paper.pdf) as a means of further constraining pose estimates. A comprehensive survey of papers in hand pose estimation have been helpfully assembled [here](https://github.com/xinghaochen/awesome-hand-pose-estimation).
 
 To extend this work further, there exist a number of incompletely solved steps in the pipeline:
-* Localization and Segmentation - Dynamics-based tracking is not robust to input noise. The tracker should only be fed with depth points on the hand itself. Furthermore, additional work is needed to disambiguate the left and right hands. Solutions in this area implicate both vision and learning based methods. 
+* Localization and Segmentation - Dynamics-based tracking is not robust to input noise. The tracker should only be fed with depth points on the hand itself. Furthermore, additional work is needed to disambiguate left and right hands. Solutions in this area implicate both vision and learning based methods. 
 * Model Fitting - A generic right hand model is provided in this repository. To extend this further, the pipeline should incorporate a parametric hand model fit in real-time to individual users, matching overall hand size and joint positions.
 * CNN Optimization and Runtime Performance - A variety of network architectures have been explored in research for hand pose estimation. Further work in this area will analyze new network types and runtime performance -- both forward execution speed and trained network sizes -- to find an ideal balance between online dynamics-based tracking and CNN-based correction.
 
