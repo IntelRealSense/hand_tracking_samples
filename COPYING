@@ -1,0 +1,24 @@
+﻿Original code is released under Apache 2.0 (See LICENSE for more details). 
+
+Other third party source-code components used in this repository are documented as follows:
+
+https://github.com/sgorsten/linalg (Unlicense)
+Authored by Sterling G. Orsten, 2016
+
+https://github.com/sgorsten/json (Unlicense)
+Authored by Sterling G. Orsten, 2016
+
+https://github.com/melax/sandbox (MIT)
+Copyright (C) Stan Melax, 2014
+
+http://www.glfw.org/ (zlib/libpng)
+Copyright (C) Camilla Berglund, 2006+
+
+https://github.com/nigels-com/glew (3-Clause BSD)
+Copyright (C) The GLEW Authors, 2002+
+
+https://github.com/ValveSoftware/openvr (3-Clause BSD)
+Copyright (C) Valve Corporation, 2015 
+
+https://github.com/IntelRealSense/librealsense (Apache 2.0)
+Copyright (C) Intel Corporation, 2015

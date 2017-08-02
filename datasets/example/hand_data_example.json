@@ -1,0 +1,15 @@
+{
+  "camtype": "ivycam",
+  "dcamera": {
+    "depth_scale": 0.000124987,
+    "dims": [320,240],
+    "focal": [238.434,238.433],
+    "principal": [157.717,123.03]
+  },
+  "feyedim": [640,480],
+  "fname": "../hand_capture/hand_data_example",
+  "hasir": false,
+  "mplane": [0,0,0,3.40282e+38],
+  "rgb_dim": [640,480],
+  "segment_scale": 0.170
+}
