@@ -1,0 +1,11 @@
+environment:
+  matrix:
+  - os: Visual Studio 2015
+    DIR: msvc140
+
+platform: x64
+configuration: Release
+
+build:
+  verbosity: minimal
+  project: hand_tracking_samples_vs2015.sln
