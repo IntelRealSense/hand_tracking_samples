@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realsense-s", "third_party\librealsense\librealsense.vc14\realsense-s\realsense-s.vcxproj", "{622186C4-6D7D-4288-B8FD-8F08419181C2}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dependencies", "dependencies", "{E518A2D1-48D5-489F-8282-BE61289B38F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "applications", "applications", "{A1EC7B8C-4F00-4A92-B758-9C7C3A4DFFF5}"
@@ -20,6 +18,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "train-hand-pose-cnn-vs2015", "train-hand-pose-cnn\train-hand-pose-cnn-vs2015.vcxproj", "{98242DB3-DAAD-4984-A6C4-8FF855AECA0B}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "openvr-hand-tracker-vs2015", "openvr-hand-tracker\openvr-hand-tracker.vcxproj", "{EC8FCD9A-6A8B-4D35-AFD3-4EF8D8D2DAC0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realsense-s", "third_party\librealsense\librealsense.vc14\realsense-s\realsense-s.vcxproj", "{622186C4-6D7D-4288-B8FD-8F08419181C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
