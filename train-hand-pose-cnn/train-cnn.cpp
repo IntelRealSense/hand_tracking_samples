@@ -32,7 +32,8 @@ void compress(Frame &frame)   // takes a frame of data and keeps only the releva
 {
 	if (frame.depth.dim() == int2(64, 64) || frame.depth.dim().x <= 64)
 		return; // already compressed to segment
-
+	frame.rgb = Image<byte3>(int2(0, 0));
+	frame.fisheye = Image<unsigned char>(int2(0, 0));
 	auto segment = HandSegmentVR(frame.depth, 0xF, { 0.1f,0.65f });
 	if (frame.ir.raster.size())
 	{
