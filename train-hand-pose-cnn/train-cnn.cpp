@@ -34,7 +34,7 @@ void compress(Frame &frame)   // takes a frame of data and keeps only the releva
 		return; // already compressed to segment
 	frame.rgb = Image<byte3>(int2(0, 0));
 	frame.fisheye = Image<unsigned char>(int2(0, 0));
-	auto segment = HandSegmentVR(frame.depth, 0xF, { 0.1f,0.65f });
+	auto segment = HandSegmentVR(frame.depth, 0xF, { 0.1f,0.70f });
 	if (frame.ir.raster.size())
 	{
 		frame.ir = Sample(frame.ir, segment.cam);

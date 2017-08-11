@@ -280,6 +280,8 @@ template<class T> Image<byte3> VisualizeHMaps(const std::vector<Image<unsigned c
 inline Image<unsigned short> HandSegmentVR(const Image<unsigned short> &depth, int entry_options = 0xF, float2 wrange = { 0.1f,0.65f }, float diam = 0.17f)
 {
 	auto dim = depth.dim();
+	if (dim == int2(64))
+		return depth;
 	Image<unsigned short> depthsmall = DownSampleMin(DownSampleMin(depth));
 	ushort2 wranged = ushort2(wrange / depth.cam.depth_scale);
 	auto dt = DistanceTransform(Threshold(depthsmall, [wranged](unsigned short d) {return /*d >= wranged.x && */d < wranged.y; }));
