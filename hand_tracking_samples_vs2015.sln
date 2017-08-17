@@ -24,6 +24,9 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dataset-exporter-vs2015", "dataset-exporter\dataset-exporter-vs2015.vcxproj", "{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ovr-hand-tracker", "ovr-hand-tracker\ovr-hand-tracker.vcxproj", "{6E743A21-CBA7-429A-BAD8-F2C3B9378EB1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{622186C4-6D7D-4288-B8FD-8F08419181C2} = {622186C4-6D7D-4288-B8FD-8F08419181C2}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
