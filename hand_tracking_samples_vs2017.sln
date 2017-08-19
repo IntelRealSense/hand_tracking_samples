@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "train-hand-pose-cnn-vs2017"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "realsense-s", "third_party\librealsense\librealsense.vc15\realsense-s\realsense-s.vcxproj", "{622186C4-6D7D-4288-B8FD-8F08419181C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dataset-exporter-vs2017", "dataset-exporter\dataset-exporter-vs2017.vcxproj", "{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -23,16 +25,6 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.ActiveCfg = Debug|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.Build.0 = Debug|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.Deploy.0 = Debug|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|x64.ActiveCfg = Debug|x64
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|x64.Build.0 = Debug|x64
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.ActiveCfg = Release|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.Build.0 = Release|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.Deploy.0 = Release|Win32
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|x64.ActiveCfg = Release|x64
-		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|x64.Build.0 = Release|x64
 		{94A29DBD-EEA1-4601-BB46-1A645FBC3423}.Debug|Win32.ActiveCfg = Debug|Win32
 		{94A29DBD-EEA1-4601-BB46-1A645FBC3423}.Debug|Win32.Build.0 = Debug|Win32
 		{94A29DBD-EEA1-4601-BB46-1A645FBC3423}.Debug|x64.ActiveCfg = Debug|x64
@@ -73,6 +65,24 @@ Global
 		{84408743-88CA-4E07-B266-214771724370}.Release|Win32.Build.0 = Release|Win32
 		{84408743-88CA-4E07-B266-214771724370}.Release|x64.ActiveCfg = Release|x64
 		{84408743-88CA-4E07-B266-214771724370}.Release|x64.Build.0 = Release|x64
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.Build.0 = Debug|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|Win32.Deploy.0 = Debug|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|x64.ActiveCfg = Debug|x64
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Debug|x64.Build.0 = Debug|x64
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.ActiveCfg = Release|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.Build.0 = Release|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|Win32.Deploy.0 = Release|Win32
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|x64.ActiveCfg = Release|x64
+		{622186C4-6D7D-4288-B8FD-8F08419181C2}.Release|x64.Build.0 = Release|x64
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Debug|Win32.Build.0 = Debug|Win32
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Debug|x64.ActiveCfg = Debug|x64
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Debug|x64.Build.0 = Debug|x64
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Release|Win32.ActiveCfg = Release|Win32
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Release|Win32.Build.0 = Release|Win32
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Release|x64.ActiveCfg = Release|x64
+		{BFB9ABDB-6ECB-4FD4-9A0C-80BD043DA2C3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

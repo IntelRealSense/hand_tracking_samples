@@ -1,9 +1,11 @@
 //
-//  for exporting the ground truth data from the binary streams 
+//  dataset-exporter   for exporting the ground truth data from the binary streams into individual image files per frame
 // 
-//  current implementation will put everthing into subfolder 'tmp'
-//  currently needs to be run from a directory that is a subdirectory of the main solution directory
-//  modify this code as needed to export desired data in preferred format
+//  Current implementation will put everthing into subfolder 'tmp'
+//  Currently needs to be run from a directory that is a subdirectory of the main solution directory
+//  Also creates two ascii text files labels_full.txt and labels_seg.txt that provide image xy locations of key locations and othre values
+//  Each line corresponds to one frame.  See code for what each of these values refer to.
+//  This is meant to be reference code which can be easily modified  as needed to export desired data in preferred format.
 // 
 
 #include <iostream>
