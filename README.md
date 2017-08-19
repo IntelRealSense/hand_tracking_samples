@@ -8,7 +8,7 @@ Visual Studio 2015 | [![Build status](https://ci.appveyor.com/api/projects/statu
 
 This project provides C++ code to demonstrate hand pose estimation via depth data, namely Intel® RealSense™ depth cameras. Additionally, this project showcases the utility of convolutional neural networks as a key component of real-time hand tracking pipelines. A variety of tools and apps are provided, including an OpenVR demo showing hand tracking from an egocentrically-mounted depth camera. A YouTube video demonstrating some functionality the hand tracking code can be found [here](https://www.youtube.com/watch?v=Yqz6T9IdiNk). 
 
-The software provided here supports the currently available Intel® RealSense™ depth cameras that using [librealsense](https://github.com/IntelRealSense/librealsense).   
+The software provided here works with the currently available Intel® RealSense™ depth cameras supported by [librealsense](https://github.com/IntelRealSense/librealsense).   
 The release of this repository closely coincides with the availibility of the latest-gen [RS400](https://arxiv.org/abs/1705.05548) camera. Support for this device will added after it begins shipping.
 
 _Hand Tracking Samples_ is experimental code and not an official Intel® product. It is subject to incompatible changes in future updates.
