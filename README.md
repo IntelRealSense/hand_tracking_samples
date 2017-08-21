@@ -29,7 +29,10 @@ Each sample application comes with a separate readme further explaining its purp
 
 * [openvr-hand-tracker](./openvr-hand-tracker) - An OpenVR-based version of hand tracking viewer app.  The included pre-trained CNN was trained on a relatively small dataset of egocentic (right) hand poses which is ideal for the VR usages with a Intel® RealSense™ SR300 camera mounted on the HMD. 
 
-* Preliminary Oculus Rift versions of the hand tracker viewer and annotator can currently be found by switching from the `master` to the `libovr` branch of this repo.   Only tested on Windows OS.
+* [ovr-hand-tracker](./ovr-hand-tracker) - Preliminary Oculus Rift VR version of the hand tracking vewer app.    Only tested on Windows OS.  See project readme.md and code for addition build requirements and instructions.
+
+* [ovr-annotator](./ovr-annotator) - An Oculus Rift VR version of the annotator app.    Only tested on Windows OS, requires extra steps to build.
+
 
 ## Building 
 
