@@ -8,7 +8,8 @@ Visual Studio 2015 | [![Build status](https://ci.appveyor.com/api/projects/statu
 
 This project provides C++ code to demonstrate hand pose estimation via depth data, namely Intel® RealSense™ depth cameras. Additionally, this project showcases the utility of convolutional neural networks as a key component of real-time hand tracking pipelines. A variety of tools and apps are provided, including an OpenVR demo showing hand tracking from an egocentrically-mounted depth camera. A YouTube video demonstrating some functionality the hand tracking code can be found [here](https://www.youtube.com/watch?v=Yqz6T9IdiNk). 
 
-The release of this repository closely coincides with the availibility of the latest-gen [RS400](https://arxiv.org/abs/1705.05548) camera. Support for this device will added when it begins shipping.
+The software provided here works with the currently available Intel® RealSense™ depth cameras supported by [librealsense](https://github.com/IntelRealSense/librealsense).   
+The release of this repository closely coincides with the availibility of the latest-gen [RS400](https://arxiv.org/abs/1705.05548) camera. Support for this device will added after it begins shipping.
 
 _Hand Tracking Samples_ is experimental code and not an official Intel® product. It is subject to incompatible changes in future updates.
 
@@ -27,6 +28,8 @@ Each sample application comes with a separate readme further explaining its purp
 * [train-hand-pose-cnn](./train-hand-pose-cnn) - This application consumes offline sequences of annotated hand pose data and introduces the CNN functionality of this project for the purposes of directly estimating joint locations from depth images. To minimize dependencies, this samples relies on a lightweight CNN implementation (forward + backward) provided as part of this project. 
 
 * [openvr-hand-tracker](./openvr-hand-tracker) - An OpenVR-based version of hand tracking viewer app.  The included pre-trained CNN was trained on a relatively small dataset of egocentic (right) hand poses which is ideal for the VR usages with a Intel® RealSense™ SR300 camera mounted on the HMD. 
+
+* Preliminary Oculus Rift versions of the hand tracker viewer and annotator can currently be found by switching from the `master` to the `libovr` branch of this repo.   Only tested on Windows OS.
 
 ## Building 
 
