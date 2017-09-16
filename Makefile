@@ -36,7 +36,7 @@ endif
 LDFLAGS := -lpthread
 INCLUDES := $(wildcard include/*.hpp)
 INCLUDES += $(wildcard include/*.h)
-OBJECTS  = $(notdir $(basename $(wildcard */*.cpp)))
+OBJECTS  = $(notdir $(basename $(filter-out openvr-hand-tracker/openvr-demo.cpp, $(wildcard */*.cpp))))
 BINARIES := $(addprefix bin/, $(OBJECTS))
 OBJECTS := $(addprefix obj/, $(addsuffix .o, $(OBJECTS)))
 
